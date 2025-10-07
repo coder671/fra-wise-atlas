@@ -12,7 +12,7 @@ const About = () => {
     {
       icon: UsersIcon,
       title: "Impact",
-      description: "Serving 2.8M+ tribal families across 12 states, ensuring their constitutional rights to forest resources are protected and honored",
+      description: "Serving 1.2M+ tribal families across 4 states, ensuring their constitutional rights to forest resources are protected and honored",
     },
     {
       icon: AwardIcon,
@@ -22,23 +22,15 @@ const About = () => {
     {
       icon: RocketIcon,
       title: "Vision",
-      description: "Scale to all forest-dwelling communities in India by 2026, making FRA implementation transparent, efficient, and data-driven",
+      description: "Expand from pilot states (MP, Odisha, Tripura, Telangana) to all forest-dwelling communities in India by 2026",
     },
   ];
 
   const targetStates = [
     "Madhya Pradesh",
-    "Chhattisgarh",
     "Odisha",
-    "Maharashtra",
-    "Rajasthan",
-    "Jharkhand",
-    "Gujarat",
-    "Andhra Pradesh",
+    "Tripura",
     "Telangana",
-    "Karnataka",
-    "West Bengal",
-    "Assam",
   ];
 
   return (
@@ -112,8 +104,8 @@ const About = () => {
         transition={{ delay: 0.6 }}
       >
         <Card className="glass-card p-8">
-          <h3 className="text-2xl font-bold mb-6 text-center text-card-foreground">Target States (Phase 1)</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          <h3 className="text-2xl font-bold mb-6 text-center text-card-foreground">Target States (Pilot Program)</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {targetStates.map((state, index) => (
               <motion.div
                 key={state}

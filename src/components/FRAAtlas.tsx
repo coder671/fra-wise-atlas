@@ -13,11 +13,9 @@ const FRAAtlas = () => {
   // Sample marker data for major tribal regions
   const locations = [
     { id: 1, name: "Madhya Pradesh", claims: 125430, status: "Active", lat: 23.2599, lng: 77.4126 },
-    { id: 2, name: "Chhattisgarh", claims: 98250, status: "Active", lat: 21.2787, lng: 81.8661 },
-    { id: 3, name: "Odisha", claims: 87640, status: "Active", lat: 20.9517, lng: 85.0985 },
-    { id: 4, name: "Maharashtra", claims: 76820, status: "Processing", lat: 19.7515, lng: 75.7139 },
-    { id: 5, name: "Rajasthan", claims: 54320, status: "Active", lat: 26.9124, lng: 75.7873 },
-    { id: 6, name: "Jharkhand", claims: 67890, status: "Active", lat: 23.6102, lng: 85.2799 },
+    { id: 2, name: "Odisha", claims: 87640, status: "Active", lat: 20.9517, lng: 85.0985 },
+    { id: 3, name: "Tripura", claims: 45280, status: "Processing", lat: 23.9408, lng: 91.9882 },
+    { id: 4, name: "Telangana", claims: 62150, status: "Active", lat: 18.1124, lng: 79.0193 },
   ];
 
   return (
@@ -226,7 +224,7 @@ const FRAAtlas = () => {
         </div>
 
         {/* Regional Statistics */}
-        <div className="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
           {locations.map((loc, idx) => (
             <motion.div
               key={loc.id}

@@ -123,10 +123,10 @@ const Hero = () => {
           >
             <MapPinIcon className="w-24 h-24 mx-auto text-primary animate-float" />
             <p className="text-xl font-semibold text-card-foreground">
-              12 States • 184 Districts • 2,847 Villages
+              4 States • 98 Districts • 1,847 Villages
             </p>
             <div className="flex justify-center gap-4 flex-wrap">
-              {["Madhya Pradesh", "Chhattisgarh", "Odisha", "Maharashtra", "Rajasthan"].map((state, i) => (
+              {["Madhya Pradesh", "Odisha", "Tripura", "Telangana"].map((state, i) => (
                 <motion.span
                   key={state}
                   initial={{ opacity: 0, x: -20 }}
