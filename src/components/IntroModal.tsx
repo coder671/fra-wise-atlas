@@ -95,7 +95,7 @@ const IntroModal = ({ open, onClose }: IntroModalProps) => {
                 transition={{ delay: 1.1 }}
                 className="text-sm text-muted-foreground"
               >
-                Built for Smart India Hackathon 2025 🏆
+                Government of India Initiative 🇮🇳
               </motion.p>
             </motion.div>
           )}

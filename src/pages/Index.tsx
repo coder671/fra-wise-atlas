@@ -54,7 +54,7 @@ const Index = () => {
             </motion.div>
             
             <div className="hidden md:flex items-center gap-2 text-sm">
-              <span className="text-muted-foreground">Smart India Hackathon 2025</span>
+              <span className="text-muted-foreground">Ministry of Tribal Affairs</span>
               <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
             </div>
           </div>
@@ -200,7 +200,7 @@ const Index = () => {
       >
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2025 FRA Atlas. Powered by AI & WebGIS Technology. Built for Smart India Hackathon 2025.
+            © 2025 FRA Atlas. Powered by AI & WebGIS Technology for Forest Rights Monitoring.
           </p>
         </div>
       </motion.footer>

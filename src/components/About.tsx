@@ -90,7 +90,7 @@ const About = () => {
               <li><strong className="text-secondary">Decision Support System:</strong> Rule-based recommendations for optimal scheme implementation</li>
             </ul>
             <p>
-              Built for <strong className="text-card-foreground">Smart India Hackathon 2025</strong>, this platform demonstrates how
+              Built for <strong className="text-card-foreground">FRA Atlas</strong>, this platform demonstrates how
               emerging technologies can create social impact at scale, ensuring justice and dignity for India's tribal communities.
             </p>
           </div>
