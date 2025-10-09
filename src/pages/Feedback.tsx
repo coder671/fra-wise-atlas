@@ -106,10 +106,10 @@ const Feedback = () => {
       const { data: feedbackData, error: feedbackError } = await supabase
         .from('feedback')
         .insert({
-          holder_id: user?.id,
+          holder_id: user!.id,
           issue_type: formData.issueType,
           description: formData.description,
-          state: formData.state,
+          state: formData.state as any,
           district: formData.district,
           village: formData.village,
           gps_lat: gpsLocation.lat,
