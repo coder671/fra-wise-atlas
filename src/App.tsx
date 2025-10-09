@@ -12,6 +12,8 @@ import Feedback from "./pages/Feedback";
 import IoTMonitor from "./pages/IoTMonitor";
 import AIChat from "./pages/AIChat";
 import NotFound from "./pages/NotFound";
+import FRAAtlas from "./components/FRAAtlas";
+import DSS from "./components/DSS";
 
 const queryClient = new QueryClient();
 
@@ -27,8 +29,10 @@ const App = () => (
             <Route path="/auth" element={<Auth />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/feedback" element={<Feedback />} />
-            <Route path="/iot" element={<IoTMonitor />} />
-            <Route path="/chat" element={<AIChat />} />
+            <Route path="/iot-monitor" element={<IoTMonitor />} />
+            <Route path="/ai-chat" element={<AIChat />} />
+            <Route path="/fra-atlas" element={<FRAAtlas />} />
+            <Route path="/dss" element={<DSS />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

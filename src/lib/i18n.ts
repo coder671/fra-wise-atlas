@@ -5,21 +5,127 @@ const resources = {
   en: {
     translation: {
       // Navigation
-      home: 'Home',
-      map: 'CFR Atlas',
-      dashboard: 'Dashboard',
-      feedback: 'Report Issue',
-      iot: 'IoT Monitor',
-      chat: 'AI Assistant',
-      docs: 'Documents',
-      login: 'Login',
-      logout: 'Logout',
+      nav: {
+        home: 'Home',
+        about: 'About',
+        contact: 'Contact',
+        dashboard: 'Dashboard',
+        login: 'Login',
+        logout: 'Logout',
+      },
       
       // Hero
-      heroTitle: 'Empowering Tribal Communities Through Digital Forest Rights Management',
-      heroSubtitle: 'Track your Community Forest Resources, monitor land health with IoT sensors, and connect with forest officers — all in your language.',
-      viewDashboard: 'View Your Land Dashboard',
-      reportIssue: 'Report an Issue',
+      hero: {
+        title: 'FRA-Wise Atlas',
+        subtitle: 'Empowering Community Forest Rights holders with digital tools for forest management and monitoring',
+        getStarted: 'Get Started',
+        exploreMap: 'Explore Map',
+        feature1: 'Real-Time Mapping',
+        feature1Desc: 'Monitor CFR forests across Madhya Pradesh, Telangana, Tripura, and Odisha',
+        feature2: 'IoT Integration',
+        feature2Desc: 'Track soil, water, and air quality with real-time sensor data',
+        feature3: 'Community Support',
+        feature3Desc: 'AI chatbot with multilingual support for easy assistance',
+      },
+      
+      // About
+      about: {
+        title: 'About FRA-Wise Atlas',
+        subtitle: 'A comprehensive digital platform for Community Forest Rights management and monitoring',
+        feature1: 'Document Digitalization',
+        feature1Desc: 'OCR and NER technology to extract Patta holder information, IDs, and land details automatically',
+        feature2: 'Mobile Feedback',
+        feature2Desc: 'Easy-to-use mobile forms for Patta holders to upload land photos and submit updates with GPS location',
+        feature3: 'AI Assistant',
+        feature3Desc: 'Multilingual AI chatbot with audio support in Hindi, Telugu, Odia, and Bengali for instant help',
+        feature4: 'Real-Time Monitoring',
+        feature4Desc: 'IoT sensor integration for monitoring soil health, water quality, and environmental conditions',
+      },
+      
+      // Contact
+      contact: {
+        title: 'Contact Us',
+        subtitle: 'Have questions? We\'re here to help',
+        getInTouch: 'Get in Touch',
+        email: 'Email',
+        phone: 'Phone',
+        address: 'Address',
+        name: 'Name',
+        emailLabel: 'Email',
+        message: 'Message',
+        send: 'Send Message',
+        success: 'Message Sent',
+        successDesc: 'We will get back to you soon!',
+      },
+      
+      // Footer
+      footer: {
+        rights: 'All rights reserved.',
+      },
+      
+      // Intro Modal
+      intro: {
+        title: 'Welcome to FRA-Wise Atlas',
+        p1: 'FRA-Wise Atlas is a comprehensive digital platform designed to empower Community Forest Rights (CFR) holders across India.',
+        p2: 'Our platform provides:',
+        feature1: 'Real-time satellite mapping of CFR forests',
+        feature2: 'IoT sensor integration for environmental monitoring',
+        feature3: 'Mobile-friendly feedback and reporting system',
+        feature4: 'AI-powered multilingual chatbot assistance',
+        feature5: 'Document digitalization with OCR technology',
+        feature6: 'Personalized dashboard for Patta holders',
+        p3: 'This platform is designed to be simple, accessible, and useful for rural communities while maintaining robust security and data protection.',
+        getStarted: 'Get Started',
+      },
+      
+      // FRA Atlas
+      fraAtlas: {
+        title: 'FRA Atlas',
+        subtitle: 'Monitor CFR forests across India',
+        allStates: 'All States',
+        mp: 'Madhya Pradesh',
+        telangana: 'Telangana',
+        tripura: 'Tripura',
+        odisha: 'Odisha',
+        legend: 'CFR Parcels',
+        totalParcels: 'Total Parcels',
+      },
+      
+      // DSS
+      dss: {
+        title: 'Decision Support System',
+        subtitle: 'AI-powered insights for forest management',
+        aiAnalysis: 'AI Analysis',
+        accuracy: 'Prediction accuracy',
+        healthScore: 'Forest Health',
+        trending: 'Trending upward',
+        alerts: 'Active Alerts',
+        needsAttention: 'Needs attention',
+        recommendations: 'Recommendations',
+        actionable: 'Actionable items',
+        insights: 'AI-Generated Insights',
+        insightsDesc: 'Based on real-time data analysis',
+        positive: 'Positive Trend',
+        positiveDesc: 'Soil moisture levels have improved by 15% in the last month across monitored areas.',
+        warning: 'Warning',
+        warningDesc: 'Three sensors in District-A showing declining air quality. Recommend immediate inspection.',
+        recommendation: 'Recommendation',
+        recommendationDesc: 'Consider increasing irrigation frequency in parcels 101-105 based on current weather patterns.',
+      },
+      
+      // AI Insights
+      insights: {
+        title: 'AI-Powered Insights',
+        subtitle: 'Real-time analysis of your forest data',
+        improvement: 'Forest Health Improving',
+        improvementDesc: 'Sensor data shows 12% increase in soil moisture and 8% improvement in air quality over the past 30 days.',
+        attention: 'Attention Required',
+        attentionDesc: '3 parcels showing declining water levels. Consider irrigation or water conservation measures.',
+        recommendation: 'AI Recommendation',
+        recommendationDesc: 'Based on weather forecasts, consider planning tree plantation activities in the next 2 weeks.',
+        alert: 'Critical Alert',
+        alertDesc: 'Sensor offline in Sector 4B for 48 hours. Immediate inspection recommended.',
+      },
       
       // States
       madhyaPradesh: 'Madhya Pradesh',
@@ -40,102 +146,74 @@ const resources = {
   },
   hi: {
     translation: {
-      home: 'होम',
-      map: 'सीएफआर एटलस',
-      dashboard: 'डैशबोर्ड',
-      feedback: 'समस्या रिपोर्ट करें',
-      iot: 'आईओटी मॉनिटर',
-      chat: 'एआई सहायक',
-      docs: 'दस्तावेज़',
-      login: 'लॉग इन करें',
-      logout: 'लॉग आउट',
-      
-      heroTitle: 'डिजिटल वन अधिकार प्रबंधन के माध्यम से आदिवासी समुदायों को सशक्त बनाना',
-      heroSubtitle: 'अपने सामुदायिक वन संसाधनों को ट्रैक करें, आईओटी सेंसर के साथ भूमि स्वास्थ्य की निगरानी करें, और वन अधिकारियों से जुड़ें - सभी आपकी भाषा में।',
-      viewDashboard: 'अपना भूमि डैशबोर्ड देखें',
-      reportIssue: 'समस्या रिपोर्ट करें',
-      
-      madhyaPradesh: 'मध्य प्रदेश',
-      odisha: 'ओडिशा',
-      tripura: 'त्रिपुरा',
-      telangana: 'तेलंगाना',
-      
-      submit: 'जमा करें',
-      cancel: 'रद्द करें',
-      save: 'सहेजें',
-      delete: 'हटाएं',
-      edit: 'संपादित करें',
-      loading: 'लोड हो रहा है...',
-      error: 'त्रुटि',
-      success: 'सफलता',
+      nav: {
+        home: 'होम',
+        about: 'के बारे में',
+        contact: 'संपर्क करें',
+        dashboard: 'डैशबोर्ड',
+        login: 'लॉग इन करें',
+        logout: 'लॉग आउट',
+      },
+      hero: {
+        title: 'FRA-Wise Atlas',
+        subtitle: 'वन प्रबंधन और निगरानी के लिए डिजिटल उपकरणों के साथ सामुदायिक वन अधिकार धारकों को सशक्त बनाना',
+        getStarted: 'शुरू करें',
+        exploreMap: 'मानचित्र देखें',
+      },
+      footer: {
+        rights: 'सर्वाधिकार सुरक्षित।',
+      },
     }
   },
   te: {
     translation: {
-      home: 'హోమ్',
-      map: 'CFR అట్లాస్',
-      dashboard: 'డాష్‌బోర్డ్',
-      feedback: 'సమస్యను నివేదించండి',
-      iot: 'IoT మానిటర్',
-      chat: 'AI అసిస్టెంట్',
-      docs: 'పత్రాలు',
-      login: 'లాగిన్',
-      logout: 'లాగ్అవుట్',
-      
-      heroTitle: 'డిజిటల్ అటవీ హక్కుల నిర్వహణ ద్వారా గిరిజన సమాజాలను శక్తివంతం చేయడం',
-      heroSubtitle: 'మీ కమ్యూనిటీ అటవీ వనరులను ట్రాక్ చేయండి, IoT సెన్సార్లతో భూమి ఆరోగ్యాన్ని పర్యవేక్షించండి మరియు అటవీ అధికారులతో కనెక్ట్ అవ్వండి — అన్నీ మీ భాషలో.',
-      viewDashboard: 'మీ భూమి డాష్‌బోర్డ్ చూడండి',
-      reportIssue: 'సమస్యను నివేదించండి',
-      
-      madhyaPradesh: 'మధ్యప్రదేశ్',
-      odisha: 'ఒడిశా',
-      tripura: 'త్రిపుర',
-      telangana: 'తెలంగాణ',
-      
-      submit: 'సమర్పించు',
-      cancel: 'రద్దు చేయి',
-      save: 'సేవ్ చేయి',
-      delete: 'తొలగించు',
-      edit: 'సవరించు',
-      loading: 'లోడ్ అవుతోంది...',
-      error: 'లోపం',
-      success: 'విజయం',
+      nav: {
+        home: 'హోమ్',
+        about: 'గురించి',
+        contact: 'సంప్రదించండి',
+        dashboard: 'డాష్‌బోర్డ్',
+        login: 'లాగిన్',
+        logout: 'లాగ్అవుట్',
+      },
+      hero: {
+        title: 'FRA-Wise Atlas',
+        subtitle: 'అటవీ నిర్వహణ మరియు పర్యవేక్షణ కోసం డిజిటల్ సాధనాలతో కమ్యూనిటీ అటవీ హక్కుల హోల్డర్‌లను శక్తివంతం చేయడం',
+        getStarted: 'ప్రారంభించండి',
+        exploreMap: 'మ్యాప్ అన్వేషించండి',
+      },
+      footer: {
+        rights: 'అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి.',
+      },
     }
   },
   or: {
     translation: {
-      home: 'ହୋମ୍',
-      map: 'CFR ଆଟ୍ଲାସ୍',
-      dashboard: 'ଡ୍ୟାସବୋର୍ଡ',
-      feedback: 'ସମସ୍ୟା ରିପୋର୍ଟ କରନ୍ତୁ',
-      iot: 'IoT ମନିଟର',
-      chat: 'AI ସହାୟକ',
-      docs: 'ଡକ୍ୟୁମେଣ୍ଟ',
-      login: 'ଲଗଇନ୍',
-      logout: 'ଲଗଆଉଟ୍',
-      
-      madhyaPradesh: 'ମଧ୍ୟ ପ୍ରଦେଶ',
-      odisha: 'ଓଡ଼ିଶା',
-      tripura: 'ତ୍ରିପୁରା',
-      telangana: 'ତେଲେଙ୍ଗାନା',
+      nav: {
+        home: 'ହୋମ୍',
+        about: 'ବିଷୟରେ',
+        contact: 'ଯୋଗାଯୋଗ',
+        dashboard: 'ଡ୍ୟାସବୋର୍ଡ',
+        login: 'ଲଗଇନ୍',
+        logout: 'ଲଗଆଉଟ୍',
+      },
+      footer: {
+        rights: 'ସମସ୍ତ ଅଧିକାର ସଂରକ୍ଷିତ।',
+      },
     }
   },
   bn: {
     translation: {
-      home: 'হোম',
-      map: 'CFR অ্যাটলাস',
-      dashboard: 'ড্যাশবোর্ড',
-      feedback: 'সমস্যা রিপোর্ট করুন',
-      iot: 'IoT মনিটর',
-      chat: 'AI সহায়ক',
-      docs: 'নথি',
-      login: 'লগইন',
-      logout: 'লগ আউট',
-      
-      madhyaPradesh: 'মধ্য প্রদেশ',
-      odisha: 'ওড়িশা',
-      tripura: 'ত্রিপুরা',
-      telangana: 'তেলেঙ্গানা',
+      nav: {
+        home: 'হোম',
+        about: 'সম্পর্কে',
+        contact: 'যোগাযোগ',
+        dashboard: 'ড্যাশবোর্ড',
+        login: 'লগইন',
+        logout: 'লগ আউট',
+      },
+      footer: {
+        rights: 'সমস্ত অধিকার সংরক্ষিত।',
+      },
     }
   }
 };
