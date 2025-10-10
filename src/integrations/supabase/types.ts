@@ -56,6 +56,7 @@ export type Database = {
           boundaries: string | null
           created_at: string | null
           district: string
+          geom: unknown | null
           holder_id: string | null
           id: string
           issue_date: string | null
@@ -73,6 +74,7 @@ export type Database = {
           boundaries?: string | null
           created_at?: string | null
           district: string
+          geom?: unknown | null
           holder_id?: string | null
           id?: string
           issue_date?: string | null
@@ -90,6 +92,7 @@ export type Database = {
           boundaries?: string | null
           created_at?: string | null
           district?: string
+          geom?: unknown | null
           holder_id?: string | null
           id?: string
           issue_date?: string | null
