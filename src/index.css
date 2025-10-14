@@ -2,57 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 200 20% 98%;
-    --foreground: 150 25% 15%;
-
+    /* CFR SmartConnect Earth-tone Palette */
+    --background: 47 100% 96%;
+    --foreground: 33 20% 20%;
     --card: 0 0% 100%;
-    --card-foreground: 150 25% 15%;
-
+    --card-foreground: 33 20% 20%;
     --popover: 0 0% 100%;
-    --popover-foreground: 150 25% 15%;
-
-    /* Primary: Forest Green (#00c853) */
-    --primary: 145 100% 39%;
+    --popover-foreground: 33 20% 20%;
+    
+    /* Forest Green Primary */
+    --primary: 122 39% 33%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 145 100% 50%;
+    --primary-glow: 122 39% 45%;
     
-    /* Secondary: Cyan (#00bcd4) */
-    --secondary: 187 100% 42%;
+    /* Earth Brown Secondary */
+    --secondary: 16 25% 48%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-glow: 187 100% 52%;
-
-    --muted: 150 20% 94%;
-    --muted-foreground: 150 15% 45%;
-
-    --accent: 187 100% 42%;
+    
+    /* Accent Blue */
+    --accent: 199 89% 41%;
     --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 84.2% 60.2%;
+    
+    /* Soft Sand Muted */
+    --muted: 47 100% 93%;
+    --muted-foreground: 33 20% 45%;
+    
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-
-    --border: 150 20% 85%;
-    --input: 150 20% 90%;
-    --ring: 145 100% 39%;
-
-    --radius: 1rem;
     
-    /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(145, 100%, 39%), hsl(187, 100%, 42%));
-    --gradient-hero: linear-gradient(135deg, hsl(145, 100%, 35%) 0%, hsl(187, 100%, 38%) 50%, hsl(145, 100%, 35%) 100%);
-    --gradient-card: linear-gradient(135deg, rgba(0, 200, 83, 0.1), rgba(0, 188, 212, 0.1));
+    --border: 47 30% 85%;
+    --input: 47 30% 85%;
+    --ring: 122 39% 33%;
+    --radius: 0.75rem;
     
-    --glass-bg: rgba(255, 255, 255, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.3);
+    --chart-1: 122 39% 33%;
+    --chart-2: 199 89% 41%;
+    --chart-3: 16 25% 48%;
+    --chart-4: 47 100% 50%;
+    --chart-5: 142 76% 36%;
     
-    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
-    --shadow-card: 0 10px 40px -10px hsl(var(--primary) / 0.2);
-    
+    /* CFR SmartConnect Design Tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(122 39% 33%), hsl(122 50% 45%));
+    --gradient-earth: linear-gradient(135deg, hsl(16 25% 48%), hsl(33 35% 55%));
+    --gradient-sky: linear-gradient(180deg, hsl(199 89% 41%), hsl(199 70% 55%));
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(46, 125, 50, 0.2);
+    --shadow-elegant: 0 10px 30px -10px rgba(46, 125, 50, 0.3);
+    --shadow-glow: 0 0 40px rgba(76, 175, 80, 0.4);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
@@ -62,43 +60,48 @@ All colors MUST be HSL.
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 122 39% 33%;
   }
 
   .dark {
-    --background: 150 30% 8%;
-    --foreground: 150 15% 92%;
-
-    --card: 150 25% 12%;
-    --card-foreground: 150 15% 92%;
-
-    --popover: 150 25% 12%;
-    --popover-foreground: 150 15% 92%;
-
-    --primary: 145 100% 45%;
-    --primary-foreground: 150 30% 8%;
-    --primary-glow: 145 100% 55%;
-
-    --secondary: 187 100% 48%;
-    --secondary-foreground: 150 30% 8%;
-    --secondary-glow: 187 100% 58%;
-
-    --muted: 150 20% 20%;
-    --muted-foreground: 150 15% 65%;
-
-    --accent: 187 100% 48%;
-    --accent-foreground: 150 30% 8%;
-
-    --destructive: 0 62.8% 50%;
+    --background: 33 25% 8%;
+    --foreground: 47 100% 96%;
+    --card: 33 25% 12%;
+    --card-foreground: 47 100% 96%;
+    --popover: 33 25% 12%;
+    --popover-foreground: 47 100% 96%;
+    
+    --primary: 122 45% 40%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 122 50% 50%;
+    
+    --secondary: 16 30% 35%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 199 70% 50%;
+    --accent-foreground: 0 0% 100%;
+    
+    --muted: 33 25% 15%;
+    --muted-foreground: 47 20% 65%;
+    
+    --destructive: 0 62% 40%;
     --destructive-foreground: 0 0% 100%;
+    
+    --border: 33 25% 18%;
+    --input: 33 25% 18%;
+    --ring: 122 45% 40%;
+    
+    --chart-1: 122 45% 40%;
+    --chart-2: 199 70% 50%;
+    --chart-3: 16 30% 35%;
+    --chart-4: 47 80% 60%;
+    --chart-5: 142 60% 45%;
+    
+    --glass-bg: rgba(23, 35, 25, 0.85);
+    --glass-border: rgba(76, 175, 80, 0.2);
+    --shadow-elegant: 0 10px 30px -10px rgba(76, 175, 80, 0.4);
+    --shadow-glow: 0 0 40px rgba(102, 187, 106, 0.3);
 
-    --border: 150 20% 25%;
-    --input: 150 20% 20%;
-    --ring: 145 100% 45%;
-    
-    --glass-bg: rgba(0, 0, 0, 0.4);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -106,7 +109,7 @@ All colors MUST be HSL.
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 122 45% 40%;
   }
 }
 
@@ -116,11 +119,11 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
-    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
-    background: linear-gradient(135deg, hsl(145, 100%, 35%) 0%, hsl(187, 100%, 38%) 50%, hsl(145, 100%, 35%) 100%);
+    @apply bg-background text-foreground;
+    font-family: 'Noto Sans', 'Lato', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, hsl(47, 100%, 96%) 0%, hsl(122, 20%, 95%) 50%, hsl(47, 100%, 96%) 100%);
     background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
+    animation: gradientShift 20s ease infinite;
   }
   
   @keyframes gradientShift {
@@ -135,7 +138,7 @@ All colors MUST be HSL.
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
     border: 1px solid var(--glass-border);
-    box-shadow: var(--shadow-card);
+    box-shadow: var(--shadow-elegant);
   }
   
   .glow-effect {
